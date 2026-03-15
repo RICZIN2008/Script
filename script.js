@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TDK
 // @namespace    https://viayoo.com/rlybzf
-// @version      15.0
+// @version      15.1
 // @description  Proteção + Mídia Micro + Player Lite + Links Vermelhos e Limpos
 // @match        https://*/*
 // @run-at       document-end
@@ -233,7 +233,7 @@
 
     addNewButton("CPF OPERADORA", "https://infopessoas.com/");
     addNewButton("NÚMERO OPERADORA 1", "https://consultaoperadora.com.br/");
-    addNewButton("NÚMERO OPERADORA 2", "https://www.qualoperadora.net/");
+    addNewButton("CHAT ONLINE", "https://tlk.io/tdk");
     addNewButton("IMEI - STATUS", "https://imeicheck.com/pt/consultar-imei");
     addNewButton("IMEI - BLACKLIST", "https://imeicheck.com/imei-blacklist-check");
     
@@ -399,3 +399,4 @@
     }, 2000);
 
 })();
+                
