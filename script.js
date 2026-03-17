@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TDK
 // @namespace    https://viayoo.com/rlybzf
-// @version      15.1
+// @version      15.2
 // @description  Proteção + Mídia Micro + Player Lite + Links Vermelhos e Limpos
 // @match        https://*/*
 // @run-at       document-end
@@ -71,6 +71,7 @@
     menu.innerHTML = `
         <h3 style="text-align:center;color:red;margin:0 0 10px 0">TDK MENU</h3>
         
+        <label style="font-size:11px;color:red;font-weight:bold;display:block;margin-bottom:5px">🔎 CONSULTAS</label>
         <div style="border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">
             <button id="cpfBtn">CONSULTAR CPF</button>
         </div>
@@ -83,8 +84,11 @@
             <input type="range" min="0.2" max="1" step="0.1" value="1" id="opacityControl" style="width:100%; accent-color: red;">
         </div>
 
-        <button id="infoBtn" style="background:red">INFO DO SISTEMA</button>
-        <br><br>
+        <label style="font-size:11px;color:red;font-weight:bold;display:block;margin-bottom:5px">🤖 SISTEMA</label>
+        <div style="border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 15px;">
+            <button id="infoBtn" style="background:red">INFO DO SISTEMA</button>
+        </div>
+        
         <button id="closeMenu" style="background:#333;border:none">FECHAR MENU</button>
     `;
     document.body.appendChild(menu);
@@ -399,4 +403,3 @@
     }, 2000);
 
 })();
-                
